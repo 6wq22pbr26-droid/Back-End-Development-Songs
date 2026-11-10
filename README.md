@@ -27,7 +27,7 @@ docker build -t songs .
 docker run --rm -p 3000:3000 songs
 ```
 
-The Songs service uses MongoDB and a unique integer `id` index. Startup seeds missing course examples without deleting existing songs. Set `MONGODB_URI` (or `MONGODB_HOST`, `MONGODB_PORT`, `MONGODB_USER`, `MONGODB_PASSWORD`); `MONGODB_DB` defaults to `songs`. Credentials are environment configuration, never committed.
+The Songs service uses MongoDB and a unique integer `id` index. Startup seeds missing course examples without deleting existing songs. Set `MONGODB_URI` (or `MONGODB_SERVICE`, `MONGODB_PORT`, `MONGODB_USERNAME`, `MONGODB_PASSWORD`); `MONGODB_DATABASE` defaults to `songs`. Credentials are environment configuration, never committed.
 
 CRUD operations have been exercised against an actual local MongoDB database.
 
